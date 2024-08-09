@@ -1,0 +1,158 @@
+23-07-2024 02:26:36 - Checksum matches. No bit flip was detected!
+23-07-2024 02:26:37 - Checksum matches. No bit flip was detected!
+23-07-2024 02:26:38 - Checksum matches. No bit flip was detected!
+23-07-2024 02:26:39 - Checksum matches. No bit flip was detected!
+23-07-2024 02:26:39 - Checksum matches. No bit flip was detected!
+23-07-2024 02:26:40 - Checksum matches. No bit flip was detected!
+23-07-2024 02:26:41 - Checksum matches. No bit flip was detected!
+23-07-2024 02:26:44 - Checksum matches. No bit flip was detected!
+23-07-2024 02:26:44 - Checksum matches. No bit flip was detected!
+23-07-2024 02:26:45 - Checksum matches. No bit flip was detected!
+23-07-2024 02:26:46 - Checksum matches. No bit flip was detected!
+23-07-2024 02:26:47 - Checksum matches. No bit flip was detected!
+23-07-2024 02:26:48 - Checksum matches. No bit flip was detected!
+23-07-2024 02:26:48 - Checksum matches. No bit flip was detected!
+23-07-2024 02:26:49 - Checksum matches. No bit flip was detected!
+23-07-2024 02:26:50 - Checksum matches. No bit flip was detected!
+23-07-2024 02:26:51 - Checksum matches. No bit flip was detected!
+23-07-2024 02:26:52 - Checksum matches. No bit flip was detected!
+23-07-2024 02:26:53 - Checksum matches. No bit flip was detected!
+23-07-2024 02:26:53 - Checksum matches. No bit flip was detected!
+23-07-2024 02:26:54 - Checksum matches. No bit flip was detected!
+23-07-2024 02:26:55 - Checksum matches. No bit flip was detected!
+23-07-2024 02:26:56 - Checksum matches. No bit flip was detected!
+23-07-2024 02:26:57 - Checksum matches. No bit flip was detected!
+23-07-2024 02:26:58 - Checksum matches. No bit flip was detected!
+23-07-2024 02:28:13 - Checksum mismatch! 2 bit flips were detected and corrected.
+23-07-2024 02:28:14 - Checksum matches. No bit flip was detected!
+23-07-2024 02:28:15 - Checksum matches. No bit flip was detected!
+23-07-2024 02:28:16 - Checksum matches. No bit flip was detected!
+23-07-2024 02:28:17 - Checksum matches. No bit flip was detected!
+23-07-2024 02:28:18 - Checksum matches. No bit flip was detected!
+23-07-2024 02:28:18 - Checksum matches. No bit flip was detected!
+23-07-2024 02:28:19 - Checksum matches. No bit flip was detected!
+23-07-2024 02:28:20 - Checksum matches. No bit flip was detected!
+23-07-2024 02:28:21 - Checksum matches. No bit flip was detected!
+23-07-2024 02:28:22 - Checksum matches. No bit flip was detected!
+23-07-2024 02:28:22 - Checksum matches. No bit flip was detected!
+23-07-2024 02:28:23 - Checksum matches. No bit flip was detected!
+23-07-2024 02:28:24 - Checksum matches. No bit flip was detected!
+23-07-2024 02:28:25 - Checksum matches. No bit flip was detected!
+23-07-2024 02:28:26 - Checksum matches. No bit flip was detected!
+23-07-2024 02:28:27 - Checksum matches. No bit flip was detected!
+23-07-2024 02:28:27 - Checksum matches. No bit flip was detected!
+23-07-2024 02:28:28 - Checksum matches. No bit flip was detected!
+23-07-2024 02:28:29 - Checksum matches. No bit flip was detected!
+23-07-2024 02:28:30 - Checksum matches. No bit flip was detected!
+23-07-2024 02:28:31 - Checksum matches. No bit flip was detected!
+23-07-2024 02:28:31 - Checksum matches. No bit flip was detected!
+23-07-2024 02:28:32 - Checksum matches. No bit flip was detected!
+23-07-2024 02:32:14 - Checksum mismatch! 3 bit flips were detected and corrected.
+23-07-2024 02:32:15 - Checksum matches. No bit flip was detected!
+23-07-2024 02:32:16 - Checksum matches. No bit flip was detected!
+23-07-2024 02:32:17 - Checksum matches. No bit flip was detected!
+23-07-2024 02:32:17 - Checksum matches. No bit flip was detected!
+23-07-2024 02:32:18 - Checksum matches. No bit flip was detected!
+23-07-2024 02:32:19 - Checksum matches. No bit flip was detected!
+23-07-2024 02:32:20 - Checksum matches. No bit flip was detected!
+23-07-2024 02:32:21 - Checksum matches. No bit flip was detected!
+23-07-2024 02:32:21 - Checksum matches. No bit flip was detected!
+25-07-2024 01:54:07 - CCM-R4F Lockstep Mode No Error Detected
+25-07-2024 01:54:07 - CCM-R4F Lockstep Mode No Error Detected
+25-07-2024 01:54:08 - CCM-R4F Lockstep Mode No Error Detected
+25-07-2024 01:54:09 - CCM-R4F Lockstep Mode No Error Detected
+25-07-2024 01:54:09 - CCM-R4F Lockstep Mode No Error Detected
+25-07-2024 01:54:10 - CCM-R4F Lockstep Mode No Error Detected
+25-07-2024 01:54:11 - CCM-R4F Lockstep Mode No Error Detected
+25-07-2024 01:54:11 - CCM-R4F Lockstep Mode No Error Detected
+25-07-2024 01:54:12 - CCM-R4F Lockstep Mode No Error Detected
+25-07-2024 01:54:13 - CCM-R4F Lockstep Mode No Error Detected
+25-07-2024 02:02:04 - CCM-R4F Lockstep Mode No Error Detected
+25-07-2024 02:02:05 - CCM-R4F Lockstep Mode No Error Detected
+25-07-2024 02:02:05 - CCM-R4F Lockstep Mode No Error Detected
+25-07-2024 02:02:06 - CCM-R4F Lockstep Mode No Error Detected
+25-07-2024 02:02:07 - CCM-R4F Lockstep Mode No Error Detected
+27-07-2024 21:59:06 - CCM-R4F Lockstep Mode No Error Detected
+27-07-2024 21:59:07 - CCM-R4F Lockstep Mode No Error Detected
+27-07-2024 21:59:07 - CCM-R4F Lockstep Mode No Error Detected
+27-07-2024 21:59:08 - CCM-R4F Lockstep Mode No Error Detected
+27-07-2024 21:59:09 - CCM-R4F Lockstep Mode No Error Detected
+27-07-2024 21:59:09 - CCM-R4F Lockstep Mode No Error Detected
+27-07-2024 21:59:10 - CCM-R4F Lockstep Mode No Error Detected
+27-07-2024 21:59:11 - CCM-R4F Lockstep Mode No Error Detected
+27-07-2024 21:59:11 - CCM-R4F Lockstep Mode No Error Detected
+27-07-2024 21:59:12 - CCM-R4F Lockstep Mode No Error Detected
+27-07-2024 21:59:13 - CCM-R4F Lockstep Mode No Error Detected
+27-07-2024 21:59:13 - CCM-R4F Lockstep Mode No Error Detected
+27-07-2024 21:59:14 - CCM-R4F Lockstep Mode No Error Detected
+01-08-2024 00:43:47 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:43:48 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:43:49 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:43:50 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:43:50 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:43:51 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:43:52 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:43:53 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:43:54 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:43:55 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:43:55 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:43:56 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:43:57 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:43:58 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:43:59 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:43:59 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:44:00 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:44:01 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:44:02 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:44:03 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:44:04 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:44:25 - SCCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:44:26 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:44:27 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:44:28 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:44:28 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:44:29 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:44:30 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:44:31 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:44:32 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:44:33 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:44:33 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:44:34 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:44:35 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:44:36 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:44:37 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:44:37 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:44:38 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:44:39 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:44:40 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:44:41 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:44:42 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:44:42 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:44:43 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 00:44:44 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 01:02:41 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 01:02:41 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 01:02:42 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 01:02:42 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 01:02:43 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 01:02:44 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 01:02:44 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 01:16:17 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 01:16:18 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 01:16:19 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 01:16:19 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 01:16:20 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 01:22:47 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 01:22:47 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 01:22:48 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 01:22:48 - CCM-R4F Lockstep Mode: No Error Detected
+01-08-2024 01:22:49 - CCM-R4F Lockstep Mode: No Error Detected
+09-08-2024 01:46:19 - Checksum matches. No bit flip was detected!
+09-08-2024 01:46:20 - Checksum matches. No bit flip was detected!
+09-08-2024 01:46:21 - Checksum matches. No bit flip was detected!
+09-08-2024 01:46:22 - Checksum matches. No bit flip was detected!
+09-08-2024 01:46:23 - Checksum matches. No bit flip was detected!
+09-08-2024 01:46:24 - Checksum matches. No bit flip was detected!
+09-08-2024 01:46:24 - Checksum matches. No bit flip was detected!
+09-08-2024 01:46:25 - Checksum matches. No bit flip was detected!
+09-08-2024 01:46:26 - Checksum matches. No bit flip was detected!
