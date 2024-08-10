@@ -1,5 +1,11 @@
+# References:
+# (1) https://stackoverflow.com/questions/17553543/pyserial-non-blocking-read-loop
+# (2) https://discuss.python.org/t/serial-read-with-python/16925
+# (3) https://pyserial.readthedocs.io/en/latest/shortintro.html
+
 import serial
 import time
+
 
 def log_uart_messages(port, baudrate):
     ser = serial.Serial(port, baudrate, timeout=1)
@@ -19,6 +25,7 @@ def log_uart_messages(port, baudrate):
     finally:
         ser.close()
         log_file.close()
+
 
 if __name__ == "__main__":
     port = 'COM5'
