@@ -1,93 +1,74 @@
 # Hercules LAUNCHXL2-RM46L852-BitFlipDetector
 
 
+## Project description
+The Hercules LAUNCHXL2-RM46L852-BitFlipDetector project aims to detect Single Event Upset (SEU) i.e. bit flips that might occur in the CPU operations and RAM within the Hercules RM46L852 microcontroller.The project is divided into two parts: (a)Monitoring of CPU operations using built-in lockstep mode and (b) Assigning a custom region in the RAM and filling it with Pseudo-Random Binary Sequence (PRBS-7) data and continuously verifying its checksum to detect bit flips.
 
-## Getting started
+In the first part, we use the built-in lockstep mode of the Hercules microcontroller to continuously compare the bus outputs of two CPU cores(Master Cortex-R4F CPU and Checker Cortex-R4F CPU) running in parallel and in case of signal mismatch which might occur due to bit flips, the CPU Compare Module for Cortex-R4F (CCM-R4F) signals an error to ESM(Error Signaling module).Our code checks the status register of the lockstep mode continuously in a loop and logs the status over serial communication along with specified LED blinking.In case of signal mismatch,it blinks the dedicated error LED to indicate the error and logs the mismatch over the serial communication.
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+In the second part of the project where we check for bitflips in the RAM of the Hercules microcontroller, we divided the RAM regions into two sections named custom_data_section and data_store_section and were defined in the linker script.Defined custom data section region is used for initializing the RAM with data generated using PRBS-7 and data store section region is used to store a copy of the generated PRBS-7 data used to fill the custom data section.Along with this, we also calculate the expected checksum while filling the custom data section with PRBS-7 data.Later in the continuous loop, we check if the calculated checksum matches our expected checksum or not and also we compare the custom data section with data store section to check for bitflips, count them, log them and correct the bit flips and continue the cycle to detect more bitflips. The loop continuously checks if the calculated checksum matches with the expected checksum and if the bitflip count is greater than 0. If there is checksum mismatch and bit flip count is non-zero, it notifies the user over serial communication about the mismatch and also indicates about the bit flip via assigned error LED blinking.
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+The ultimate goal of this project is to test the microcontroller chip against radiation-induced Single Event Effects (SEEs) by simulating space conditions using a particle accelerator.The data collected during the experiment will be used to determine the SEE cross section of the chip which is extremely important for predicting the reliability of the chip.The project aims to publish these findings which will provide valuable insights into the microcontroller’s reliability in harsh environments like space contributing to future space missions. 
 
-## Add your files
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+## Folder and File Descriptions
 
+The project is organized into below mentioned files,each serving a specific purpose in the detection and logging of bit flips and CPU errors caused by Single Event Effects (SEEs). Below is the description of each file and its functionality:
+
+### CPU Compare Module(Lockstep Mode)_Bitflip-detector
+- **File**: `sys_main.c`
+- **Description**:
+  - It is the main application for monitoring the lockstep mode of the CCM-R4F (CPU Compare Module) in the Hercules RM46L852 microcontroller.
+  - The application continuously checks the CCM Status Register's 16th bit using a bitwise AND operation for compare errors, which notifies about errors incase there is mismatch between the outputs of two CPU cores running in lockstep mode.
+  - Errors are then logged via SCI(Serial Communication Interface) and indicated by LED status, providing real-time monitoring of the CPU in harsh environments.
+  - This setup helps us to know how reliable Hercules CPU is even when exposed to cosmic radiation or other sources of SEEs.
+
+### Memory(RAM)_Bitflip-detector
+- **File**: `sys_main.c`
+- **Description**:
+  - It is the main application for detecting bit flips in a custom-defined RAM region of the Hercules RM46L852 microcontroller. 
+  - The application uses a Pseudo-Random Binary Sequence (PRBS-7) to initialize the custom defined RAM regionand continuously calculates a checksum and matches it with expected checksum to detect bit flips.
+  - If a bit flip is detected, the event is logged over the Serial Communication Interface (SCI),error LED indicator is toggled to signal the error and finally the flipped bit is corrected.
+  - The application is designed for radiation testing, where the reliability of the memory(RAM) is tested against SEEs during particle irradiation.
+
+### Serial_Monitor(Log script)
+- **File**: `main.py`
+- **Description**:
+  - This Python script was developed so that the user can see the bitflip or status messages from Hercules microcontroller via UART.
+  - It continuously listens for messages from the microcontroller via assigned COM port, displays the messages in the terminal and finally logs the messages with a timestamp into a text file (`bitflip_log.txt`).
+  - The script is required for capturing real-time data during testing i.e. detection of bit flips, which is critical for determining the SEE cross section of the chip.
+  - The script helps the user to monitor the microcontroller's outputs during irradiation tests.
+
+
+## Download the repository
+You can download the repository using any of the following methods:
+
+- **Clone with SSH:**
 ```
-cd existing_repo
-git remote add origin https://version.aalto.fi/gitlab/chakraa3/hercules-launchxl2-rm46l852-bitflipdetector.git
-git branch -M main
-git push -uf origin main
+  git@version.aalto.fi:chakraa3/hercules-launchxl2-rm46l852-bitflipdetector.git 
 ```
+- **Clone with HTTPS:**
+```
+  https://version.aalto.fi/gitlab/chakraa3/hercules-launchxl2-rm46l852-bitflipdetector.git
+```
+- **Download as zip:**
+1. Navigate to the repository page.
+2. Click on the "Code" button (typically a dropdown on the right-hand side).
+3. Select "zip" to download the entire repository as a ZIP file.
+4. Extract the ZIP file to your desired location.
 
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://version.aalto.fi/gitlab/chakraa3/hercules-launchxl2-rm46l852-bitflipdetector/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
 
 ## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+To flash the codes: 
 
 ## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+- Author: Arnab Chakraborty (Masters student,Dept. Electrical and Automation,Aalto University)
+- Advisor: Anton Fetzer (Doctoral Researcher,Dept. Electronics and Nanoeng,Aalto University)
+- Supervisor: Jaan Praks (Associate Professor,Dept. Electronics and Nanoeng,Aalto University)
+
+## Datasheet link
+[For Hercules LAUNCHXL2-RM46L852](https://www.ti.com/lit/ug/spnu514c/spnu514c.pdf)
+1oo1DLockStepMode - discussed in pg no.387, status, control and key registers in pg no.390,391,392
 
 ## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+[MIT](https://choosealicense.com/licenses/mit/)
