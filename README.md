@@ -19,25 +19,25 @@ The project is organized into below mentioned files,each serving a specific purp
 - **File**: `sys_main.c`
 - **Description**:
   - It is the main application for monitoring the lockstep mode of the CCM-R4F (CPU Compare Module) in the Hercules RM46L852 microcontroller.
-  - The application continuously checks the CCM Status Register's 16th bit using a bitwise AND operation for compare errors, which notifies about errors incase there is mismatch between the outputs of two CPU cores running in lockstep mode.
+  - The application continuously checks for the CCM Status Register's 16th bit using a bitwise AND operation for compare errors, which then notifies about errors incase there is a mismatch between the outputs of two CPU cores running in lockstep mode.
   - Errors are then logged via SCI(Serial Communication Interface) and indicated by LED status, providing real-time monitoring of the CPU in harsh environments.
-  - This setup helps us to know how reliable Hercules CPU is even when exposed to cosmic radiation or other sources of SEEs.
+  - This program helps us to know how reliable Hercules CPU is when exposed to cosmic radiation or other sources of SEEs.
 
 ### Memory(RAM)_Bitflip-detector
 - **File**: `sys_main.c`
 - **Description**:
-  - It is the main application for detecting bit flips in a custom-defined RAM region of the Hercules RM46L852 microcontroller. 
-  - The application uses a Pseudo-Random Binary Sequence (PRBS-7) to initialize the custom defined RAM regionand continuously calculates a checksum and matches it with expected checksum to detect bit flips.
-  - If a bit flip is detected, the event is logged over the Serial Communication Interface (SCI),error LED indicator is toggled to signal the error and finally the flipped bit is corrected.
+  - It is the main application for detecting bit flips in a custom-defined RAM region in the linker script of the Hercules RM46L852 microcontroller. 
+  - The application uses a Pseudo-Random Binary Sequence (PRBS-7) to initialize or fill the custom defined RAM region and continuously calculates a checksum and matches it with the expected checksum to detect bit flips.
+  - If a bit flip is detected, the event is logged over the Serial Communication Interface (SCI),error LED indicator is toggled to signal the error and finally the flipped bit is corrected and the program moves on in the loop to detect more bitflips.
   - The application is designed for radiation testing, where the reliability of the memory(RAM) is tested against SEEs during particle irradiation.
 
 ### Serial_Monitor(Log script)
 - **File**: `main.py`
 - **Description**:
   - This Python script was developed so that the user can see the bitflip or status messages from Hercules microcontroller via UART.
-  - It continuously listens for messages from the microcontroller via assigned COM port, displays the messages in the terminal and finally logs the messages with a timestamp into a text file (`bitflip_log.txt`).
-  - The script is required for capturing real-time data during testing i.e. detection of bit flips, which is critical for determining the SEE cross section of the chip.
-  - The script helps the user to monitor the microcontroller's outputs during irradiation tests.
+  - It continuously listens for messages from the microcontroller via assigned COM port, displays the messages in the terminal and finally logs the messages with a timestamp into the text file (`bitflip_log.txt`).
+  - The script is required for logging of real-time data during testing i.e. counting the number of bit flips, which is required for determining the SEE cross section of the chip.
+  - The python script helps the user to monitor the microcontroller's outputs during the irradiation tests.
 
 
 ## Download the repository
@@ -67,8 +67,8 @@ To flash the codes:
 - Supervisor: Jaan Praks (Associate Professor,Dept. Electronics and Nanoeng,Aalto University)
 
 ## Datasheet link
-[For Hercules LAUNCHXL2-RM46L852](https://www.ti.com/lit/ug/spnu514c/spnu514c.pdf)
-1oo1DLockStepMode - discussed in pg no.387, status, control and key registers in pg no.390,391,392
+[Datasheet : Hercules LAUNCHXL2-RM46L852](https://www.ti.com/lit/ug/spnu514c/spnu514c.pdf)
+- 1oo1DLockStepMode - discussed in pg no.387, status, control and key registers in pg no.390,391,392 respectively 
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
