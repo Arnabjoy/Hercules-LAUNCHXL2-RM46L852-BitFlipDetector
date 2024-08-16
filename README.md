@@ -60,34 +60,60 @@ You can download the repository using any of the following methods:
 
 ## Usage
 To flash the codes or for uploading the codes to the microcontroller, follow the below steps:
-1. At first download the Code Composer Studio(recommended version:12.5.0 (04 Oct 2023) or later) from the following link:[Code Composer Studio](https://www.ti.com/tool/download/CCSTUDIO/12.5.0)
-2. Create your own workspace
-3. Go to File>Open Projects from File System>Click on Directory>Select the program folder from the downloaded or cloned repo like CPU Compare Module(Lockstep Mode)_Bitflip-detector
- ![Import Projects](images/Import%20projects.png)
-4. Once the project folder is imported, you should see the project folder in the project explorer of CCS like below:
- ![Import Projects](images/Project_explorer.png)
-5. Right click on the project folder and click properties
- ![Import Projects](images/Properties1.png)
-6. Make sure the General properties look like below where you need to set the Family,Variant and core and Connection(optional:do verify the connection if it succeeds or not):
- ![Import Projects](images/General_properties.png)
-7. Beside general properties,in the same window, select Build>Arm Compiler>Include options and do click on the plus sign>Workspace>Select include folder and press OK(this tells the compiler where to look for the header files)
- ![Import Projects](images/Include.png)
-8. After this, you can see the application source code in project explorer source>sys_main.c if you need to change something.
- ![Import Projects](images/Source_code.png)
-9. Finally, press the flash button on the top left side like below to upload the program to the microcontroller(Make sure you have connected the microcontroller using USB cable to the pc)
- ![Import Projects](images/Flash.png)
-10. Once the flash is successful, press the physical button(labeled as PORRST) in the microcontroller to start the program.As soon as you press the button, you should see the LED2(GIOB_1) blinking.LED2 blinks when the test is successful i.e No bitflips are being detected and LED3((GIOB_2)) blinks when the test does not pass(i.e bitflip detected).
- ![Import Projects](images/LED2%20blinking.png)
-11. To check the real-time log messages through serial port inside the IDE, you can open a terminal from the top left corner and select serial terminal and COM5 as serial port(might be different for your system(try other COM ports)) along with baudrate:9600,Data size:8,Parity:None,Stop bits:2 and press OK.You should see the log messages in the IDE terminal now.
- ![Import Projects](images/Serial_terminal.png)
- ![Import Projects](images/log_messages_terminal.png)
-12. However, it is recommended to use the main.py script from Serial_Monitor(Log script) from the repo that we developed to display the log messages with timestamp and store them in a text file named(`bitflip_log.txt`).Before running the script, please close the COM5 port first and then the terminal if it was opened following the previous step and is still running in the Code Composer Studio.If it is not closed, the pyscript will not be able to access the COM5 or selected port.
- ![Import Projects](images/COM5_port%20close.png)
- ![Import Projects](images/pyscript_log.png)
- You can check the saved log messages with timestamp in the text file(`bitflip_log.txt`).
- ![Import Projects](images/log_messages_pyscript.png)
 
-**📝 Note:** **You can follow the same steps for flashing the program `Memory(RAM)_Bitflip-detector`of the repo to the microcontroller.**
+1. At first, download the Code Composer Studio (recommended version: 12.5.0 (04 Oct 2023) or later) from the following link: [Code Composer Studio](https://www.ti.com/tool/download/CCSTUDIO/12.5.0)
+   
+2. Create your own workspace
+
+3. Go to `File > Open Projects from File System > Click on Directory > Select` the program folder from the downloaded or cloned repo like `CPU Compare Module (Lockstep Mode)_Bitflip-detector`.
+
+   ![Import Projects](images/Import%20projects.png)
+
+4. Once the project folder is imported, you should see the project folder in the project explorer of CCS like below:
+
+   ![Import Projects](images/Project_explorer.png)
+
+5. Right-click on the project folder and click properties.
+
+   ![Import Projects](images/Properties1.png)
+
+6. Make sure the General properties look like below where you need to set the Family, Variant, Core, and Connection (optional: do verify the connection to see if it succeeds or not):
+
+   ![Import Projects](images/General_properties.png)
+
+7. Beside general properties, in the same window, select `Build > Arm Compiler > Include options` and click on the plus sign > `Workspace > Select include folder` and press OK (this tells the compiler where to look for the header files).
+
+   ![Import Projects](images/Include.png)
+
+8. After this, you can see the application source code in project explorer under `source > sys_main.c` if you need to change something.
+
+   ![Import Projects](images/Source_code.png)
+
+9. Finally, press the flash button on the top left side like below to upload the program to the microcontroller (Make sure you have connected the microcontroller using a USB cable to the PC).
+
+   ![Import Projects](images/Flash.png)
+
+10. Once the flash is successful, press the physical button (labeled as PORRST) on the microcontroller to start the program. As soon as you press the button, you should see LED2 (GIOB_1) blinking. LED2 blinks when the test is successful, i.e., no bitflips are being detected, and LED3 (GIOB_2) blinks when the test does not pass (i.e., a bitflip is detected).
+
+    ![Import Projects](images/LED2%20blinking.png)
+
+11. To check the real-time log messages through the serial port inside the IDE, you can open a terminal from the top left corner, select Serial Terminal, and COM5 as the serial port (this might be different for your system; try other COM ports) along with the following settings: baudrate: 9600, Data size: 8, Parity: None, Stop bits: 2, and press OK. You should see the log messages in the IDE terminal now.
+
+    ![Import Projects](images/Serial_terminal.png)
+    
+    ![Import Projects](images/log_messages_terminal.png)
+
+12. However, it is recommended to use the `main.py` script from the `Serial_Monitor (Log script)` folder of the repo that we developed to display the log messages with timestamps and store them in a text file named `bitflip_log.txt`. Before running the script, please close the COM5 port first and then the terminal if it was opened following the previous step and is still running in the Code Composer Studio. If it is not closed, the Python script will not be able to access the COM5 or selected port.
+
+    ![Import Projects](images/COM5_port%20close.png)
+    
+    ![Import Projects](images/pyscript_log.png)
+
+    You can check the saved log messages with timestamps in the text file `bitflip_log.txt`.
+
+    ![Import Projects](images/log_messages_pyscript.png)
+
+**📝 Note:** **You can follow the same steps for flashing the program `Memory(RAM)_Bitflip-detector` of the repo to the microcontroller.**
 
 
 ## Demonstration Video
