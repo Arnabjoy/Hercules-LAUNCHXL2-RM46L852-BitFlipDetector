@@ -309,3 +309,107 @@
 18-08-2024 02:01:54 - CCM-R4F Lockstep Mode: No Error Detected
 18-08-2024 02:01:55 - CCM-R4F Lockstep Mode: No Error Detected
 18-08-2024 02:01:55 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:16:30 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:16:31 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:16:31 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:16:32 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:16:32 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:16:33 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:16:34 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:16:34 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:16:35 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:16:36 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:16:36 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:16:37 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:16:38 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:16:38 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:16:39 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:16:39 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:16:40 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:16:41 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:16:41 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:16:42 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:25:55 - Checksum matches. No bit flip was detected!
+18-08-2024 02:25:56 - Checksum matches. No bit flip was detected!
+18-08-2024 02:25:57 - Checksum matches. No bit flip was detected!
+18-08-2024 02:25:58 - Checksum matches. No bit flip was detected!
+18-08-2024 02:25:59 - Checksum matches. No bit flip was detected!
+18-08-2024 02:25:59 - Checksum matches. No bit flip was detected!
+18-08-2024 02:26:00 - Checksum matches. No bit flip was detected!
+18-08-2024 02:26:01 - Checksum matches. No bit flip was detected!
+18-08-2024 02:26:02 - Checksum matches. No bit flip was detected!
+18-08-2024 02:26:03 - Checksum matches. No bit flip was detected!
+18-08-2024 02:26:04 - Checksum matches. No bit flip was detected!
+18-08-2024 02:26:04 - Checksum matches. No bit flip was detected!
+18-08-2024 02:26:05 - Checksum matches. No bit flip was detected!
+18-08-2024 02:26:06 - Checksum matches. No bit flip was detected!
+18-08-2024 02:26:07 - Checksum matches. No bit flip was detected!
+18-08-2024 02:26:08 - Checksum matches. No bit flip was detected!
+18-08-2024 02:26:08 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:14 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:14 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:15 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:16 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:17 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:18 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:19 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:19 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:20 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:21 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:22 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:23 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:24 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:24 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:25 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:26 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:27 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:28 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:28 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:29 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:30 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:31 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:32 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:33 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:33 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:34 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:35 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:36 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:37 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:38 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:38 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:39 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:40 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:58 - Checksum mismatch! 2 bit flips were detected and corrected.
+18-08-2024 02:30:59 - Checksum matches. No bit flip was detected!
+18-08-2024 02:30:59 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:00 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:01 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:02 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:03 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:04 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:04 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:05 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:06 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:07 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:08 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:09 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:09 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:10 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:11 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:12 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:13 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:13 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:14 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:15 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:16 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:17 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:18 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:18 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:19 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:20 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:21 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:22 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:23 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:23 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:24 - Checksum matches. No bit flip was detected!
+18-08-2024 02:31:25 - Checksum matches. No bit flip was detected!

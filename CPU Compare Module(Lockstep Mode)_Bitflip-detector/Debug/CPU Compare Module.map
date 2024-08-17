@@ -1,7 +1,7 @@
 ******************************************************************************
                   TI ARM Linker PC v20.2.7                     
 ******************************************************************************
->> Linked Sun Aug 18 02:01:04 2024
+>> Linked Sun Aug 18 02:15:45 2024
 
 OUTPUT FILE NAME:   <CPU Compare Module.out>
 ENTRY POINT SYMBOL: "_c_int00"  address: 00006be0
