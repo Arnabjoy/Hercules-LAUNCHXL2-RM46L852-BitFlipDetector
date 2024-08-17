@@ -150,8 +150,8 @@ int main(void) {
     }
 
     // Simulate bit flips for testing
-    custom_ram[10] ^= 0x1;     // Flip the least significant bit of the 11th element
-    custom_ram[10] ^= 0x2;     // Flip the second least significant bit of the 11th element
+    //custom_ram[10] ^= 0x1;     // Flip the least significant bit of the 11th element
+    //custom_ram[10] ^= 0x2;     // Flip the second least significant bit of the 11th element
 
     // Infinite loop to verify the checksum and correct errors
     while (1) {
