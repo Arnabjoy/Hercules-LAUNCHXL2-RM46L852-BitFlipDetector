@@ -269,3 +269,43 @@
 18-08-2024 01:38:10 - Checksum matches. No bit flip was detected!
 18-08-2024 01:38:11 - Checksum matches. No bit flip was detected!
 18-08-2024 01:38:12 - Checksum matches. No bit flip was detected!
+18-08-2024 01:50:51 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 01:50:51 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 01:50:52 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 01:50:53 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 01:50:53 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 01:50:54 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 01:50:55 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 01:50:55 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 01:50:56 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 01:50:56 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 01:50:57 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 01:50:58 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 01:50:58 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 01:50:59 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 01:51:00 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 01:51:00 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 01:51:01 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:01:41 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:01:42 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:01:43 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:01:43 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:01:44 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:01:44 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:01:45 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:01:46 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:01:46 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:01:47 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:01:48 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:01:48 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:01:49 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:01:50 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:01:50 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:01:51 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:01:51 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:01:52 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:01:53 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:01:53 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:01:54 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:01:55 - CCM-R4F Lockstep Mode: No Error Detected
+18-08-2024 02:01:55 - CCM-R4F Lockstep Mode: No Error Detected

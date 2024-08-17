@@ -113,6 +113,8 @@ To flash the codes or for uploading the codes to the microcontroller, follow the
 
     ![Import Projects](images/log_messages_pyscript.png)
 
+Also,remember to change the COM port in the scripts(specifically in main.py) to the port you are using(it maybe COM4, COM5, etc.) depending on your system.
+
 **📝 Note:** **You can follow the same steps for flashing the program `Memory(RAM)_Bitflip-detector` of the repo to the microcontroller.**
 
 
