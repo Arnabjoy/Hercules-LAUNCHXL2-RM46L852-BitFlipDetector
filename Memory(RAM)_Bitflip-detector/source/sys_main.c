@@ -8,9 +8,9 @@
 *
 * This application initializes a custom RAM region with PRBS-7 generated data,
 * calculates a checksum, and continuously verifies the checksum to detect any
-* bit flips. If bit flips are detected, the information is sent and logged over SCI (Serial
+* bit flips. If bit flips are detected, the information is logged over SCI (Serial
 * Communication Interface) and indicated via LED 3 (GIOB_2) blinking. If no bit flips
-* are detected, this information is also sent and logged over SCI and indicated via
+* are detected, this information is also logged over SCI and indicated via
 * LED 2 (GIOB_1) blinking.
 *
 * The purpose of this application is to test the robustness of the memory
@@ -58,14 +58,12 @@
 #include <stdint.h>
 #include <string.h>
 
-
-/* Defining the start and size of the memory regions */
+/* Defines the start and size of the memory regions */
 #define DATA_STORE_START 0x08001600  // Start address of data store
-#define DATA_STORE_SIZE  0x000174FC    // Each region size: 93.25 KB
+#define DATA_STORE_SIZE  0x000174FC  // Each region size: 93.25 KB
 
 #define CUSTOM_RAM_START 0x08018AFC  // Start address of custom RAM
-#define CUSTOM_RAM_SIZE  0x000174FC    // Each region size: 93.25 KB and end address: 0x0802FFF0
-
+#define CUSTOM_RAM_SIZE  0x000174FC  // Each region size: 93.25 KB and end address: 0x0802FFF0
 
 /* LED port and pin definitions */
 #define LED_PORT gioPORTB
@@ -79,7 +77,7 @@ __attribute__((section(".data_store_section"))) uint64_t original_ram[DATA_STORE
 /**
  * @brief Generate PRBS-7 sequence
  *
- * This function is generating a pseudo-random binary sequence (PRBS) of length 7.
+ * This function generates a pseudo-random binary sequence (PRBS) of length 7.
  * It is used to fill the custom RAM with random data.
  *
  * @return 7-bit PRBS value
@@ -131,7 +129,6 @@ int main(void) {
     // Set the direction for LED pins
     gioSetDirection(LED_PORT, (1 << LED_PIN_SUCCESS) | (1 << LED_PIN_ERROR));
 
-
     _enable_IRQ(); // Enable interrupts
 
     uint64_t data = 0;
@@ -153,10 +150,10 @@ int main(void) {
     }
 
     // Simulate bit flips for testing
-    //custom_ram[10] ^= 0x1;     // Flip the least significant bit of the 11th element
-    //custom_ram[10] ^= 0x2;     // Flip the second least significant bit of the 11th element
+    custom_ram[10] ^= 0x1;     // Flip the least significant bit of the 11th element
+    custom_ram[10] ^= 0x2;     // Flip the second least significant bit of the 11th element
 
-    // Infinite loop to verify the checksum
+    // Infinite loop to verify the checksum and correct errors
     while (1) {
         uint64_t calculated_checksum = 0;
         uint64_t bit_flip_count = 0;
@@ -165,9 +162,14 @@ int main(void) {
         for (i = 0; i < CUSTOM_RAM_SIZE / sizeof(uint64_t); i++) {
             calculated_checksum += custom_ram[i];
             uint64_t xor_val = custom_ram[i] ^ original_ram[i];
-            while (xor_val) {
-                bit_flip_count += xor_val & 1;
-                xor_val >>= 1;
+            if (xor_val != 0) {
+                // Correct the bit flip by restoring the stored original value from original_ram
+                custom_ram[i] = original_ram[i];
+                // Count the number of bit flips
+                while (xor_val) {                    //Loop continues as long as xor_val is non-zero
+                    bit_flip_count += xor_val & 1;  // Incrementing bit_flip_count for each bit flip
+                    xor_val >>= 1; // Right shifting xor_val to check the next bit
+                }
             }
         }
 
@@ -178,21 +180,20 @@ int main(void) {
             logToSerial(log_entry);
             gioSetBit(LED_PORT, LED_PIN_ERROR, 0);    // Turning off Error LED
             gioToggleBit(LED_PORT, LED_PIN_SUCCESS); // Toggling Success LED for creating a blinking effect
-
         } else {
             char log_entry[200];
-            snprintf(log_entry, sizeof(log_entry), "\rChecksum mismatch! %llu bit flips were detected.\r\n", bit_flip_count);
+            snprintf(log_entry, sizeof(log_entry), "\rChecksum mismatch! %llu bit flips were detected and corrected.\r\n", bit_flip_count);
             logToSerial(log_entry);
-            gioSetBit(LED_PORT, LED_PIN_SUCCESS, 0); // Turning off Success LED
-            gioToggleBit(LED_PORT, LED_PIN_ERROR);  // Toggling Error LED for creating a blinking effect
+            gioSetBit(LED_PORT, LED_PIN_SUCCESS, 0);   // Turning off Success LED
+            gioToggleBit(LED_PORT, LED_PIN_ERROR);    // Toggling Error LED for creating a blinking effect
 
         }
 
         delay(10000000);  // Delay to avoid flooding the terminal
     }
 
-    // return 0;
 }
+
 
 
 

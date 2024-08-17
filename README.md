@@ -27,8 +27,8 @@ The project is organized into below mentioned files,each serving a specific purp
 - **File**: `sys_main.c`
 - **Description**:
   - It is the main application for detecting bit flips in a custom-defined RAM region in the linker script of the Hercules RM46L852 microcontroller. 
-  - The application uses a Pseudo-Random Binary Sequence (PRBS-7) to initialize or fill the custom defined RAM region and continuously calculates a checksum and matches it with the expected checksum to detect bit flips.
-  - If a bit flip is detected, the event is logged over the Serial Communication Interface (SCI),error LED indicator is toggled to signal the error and finally the flipped bit is corrected and the program moves on in the loop to detect more bitflips.
+  - The application uses a Pseudo-Random Binary Sequence (PRBS-7) to initialize or fill the custom defined RAM region with random data and calculates an expected checksum and continuously matches it with the calculated checksum to detect bit flips.
+  - If bit flips are detected, the flipped bits are immediately corrected, the number of flipped bits is counted, and the event is logged over the Serial Communication Interface (SCI) if the checksum does not match with the expected and bit flip count is greater than 0,notifying the user about the number of bitflips that occured. Additionally, the error LED indicator is toggled to signal the error, and the program continues in the loop to detect more bit flips.
   - The application is designed for radiation testing, where the reliability of the memory(RAM) is tested against SEEs during particle irradiation.
 
 ### Serial_Monitor(Log script)
