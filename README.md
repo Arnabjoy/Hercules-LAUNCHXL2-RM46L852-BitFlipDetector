@@ -120,7 +120,7 @@ Also,remember to change the COM port in the scripts(specifically in main.py) to 
 
 ## Demonstration Video
 
-You can watch a demonstration of the project in action by clicking the link below:
+You can watch a demonstration of the project in action by clicking the video below:
 
 [![Watch the video](https://img.youtube.com/vi/46FlOZOaWkE/0.jpg)](https://youtu.be/46FlOZOaWkE)
 
