@@ -1,15 +1,15 @@
 /**
  * @file sys_main.c
  * @brief Main application file for CCM-R4F lockstep mode monitoring
- * @date 1-August-2024
+ * @date 21st July, 2024
  * @version 1.0
+ * @author Arnab Chakraborty
  *
  * This application initializes the CCM-R4F module to operate in lockstep mode.
  * It continuously monitors the CCM Status Register (CCMSR) for compare errors,
  * logs the results via serial communication, and controls two LEDs to indicate
  * the status of the comparison.
  *
- * Author: Arnab Chakraborty
  */
 
 #include "sys_common.h"
@@ -88,11 +88,13 @@ void main(void) {
             gioToggleBit(LED_PORT, LED_PIN_ERROR);      /**< Toggle error LED */
 
             /* Clear error flags */
-            *((volatile uint32_t *)(CCMR4F_BASE_ADDR + CCMSR_OFFSET)) = CCMSR_CMPE_MASK; /**< Clear compare error status bit */
+            *((volatile uint32_t *)(CCMR4F_BASE_ADDR + CCMSR_OFFSET)) = CCMSR_CMPE_MASK; /**< Clearing compare error status bit */
+             //systemREG1->SYSECR = 0x8000;  /**< Writing to SYSECR to trigger a CPU reset when error is detected */
         } else {
             logToSerial("\rCCM-R4F Lockstep Mode: No Error Detected\r\n");
             gioSetBit(LED_PORT, LED_PIN_ERROR, 0);      /**< Turn off error LED */
             gioToggleBit(LED_PORT, LED_PIN_SUCCESS);    /**< Toggle success LED */
+
         }
 
         /* Delay before the next iteration */

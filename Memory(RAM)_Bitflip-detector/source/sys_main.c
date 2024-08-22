@@ -3,7 +3,7 @@
 * @brief Application main file
 * @Space Science-Special Assignment
 * @date 21st July, 2024
-* @version 01
+* @version 1.0
 * @author Arnab Chakraborty
 *
 * This application initializes a custom RAM region with PRBS-7 generated data,
