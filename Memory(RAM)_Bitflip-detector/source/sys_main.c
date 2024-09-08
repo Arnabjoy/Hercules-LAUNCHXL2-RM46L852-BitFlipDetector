@@ -53,7 +53,6 @@
 #include "sys_common.h"
 #include "sci.h"
 #include "gio.h"
-#include "reg_sci.h"
 #include <stdio.h>
 #include <stdint.h>
 #include <string.h>
@@ -110,7 +109,7 @@ void delay(uint32_t count) {
  * @param message The message to be logged
  */
 void logToSerial(const char* message) {
-    while (!sciIsTxReady(scilinREG));  // Wait until the TX buffer is ready
+    while (!sciIsTxReady(scilinREG));  // Waiting until the TX buffer is ready
     sciSend(scilinREG, strlen(message), (unsigned char*)message);
 }
 
