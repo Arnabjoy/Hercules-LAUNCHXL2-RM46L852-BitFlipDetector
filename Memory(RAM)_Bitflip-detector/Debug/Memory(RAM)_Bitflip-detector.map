@@ -1,7 +1,7 @@
 ******************************************************************************
                   TI ARM Linker PC v20.2.7                     
 ******************************************************************************
->> Linked Sun Sep  8 20:54:42 2024
+>> Linked Mon Sep  9 12:47:06 2024
 
 OUTPUT FILE NAME:   <Memory(RAM)_Bitflip-detector.out>
 ENTRY POINT SYMBOL: "_c_int00"  address: 00007bf8

@@ -54,7 +54,6 @@
 #include "sci.h"
 #include "gio.h"
 #include <stdio.h>
-#include <stdint.h>
 #include <string.h>
 
 /* Defines the start and size of the memory regions */
